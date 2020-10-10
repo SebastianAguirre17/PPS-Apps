@@ -1,0 +1,32 @@
+
+<ion-content>
+<div class="fondo">
+
+  <ion-grid>
+    <ion-col >
+      <ion-row style="display: flex;justify-content: space-evenly;height: 20vh;">
+        <img src="../../../assets/images/1.png" alt=""  width="149px"> <h2 class="texto">{{primero}}</h2>
+      </ion-row>
+
+      <ion-row style="display: flex;justify-content: space-evenly;height: 20vh;">
+        <h2 class="texto">{{segundo}}</h2> <img src="../../../assets/images/2.png" alt="" width="149px"> 
+      </ion-row>
+      <ion-row style="display: flex;justify-content: space-evenly;height: 20vh;">
+        <img src="../../../assets/images/3.png" alt="" height="149px"> <h2 class="texto">{{tercero}}</h2>
+      </ion-row>
+
+
+      <ion-row style="max-height: 40%;">
+        <div class="contenedor">
+          <img (click)="jugar()" src="../../../assets/images/jugar.png" width="100%" alt="">
+          <h2 class="texto centrado"  style="color: black;margin: 0px;">Jugar</h2>
+          </div>
+      </ion-row>
+
+
+
+    </ion-col>
+ </ion-grid>
+
+</div>
+</ion-content>

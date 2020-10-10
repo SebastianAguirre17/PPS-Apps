@@ -1,0 +1,128 @@
+{
+  "Lion": {
+    "name": "Leon",
+    "species": "Mamífero",
+    "sound": "assets/sounds/leon.mp3"
+  },
+  "Monkey": {
+    "name": "Mono",
+    "species": "Mamífero",
+    "sound": "assets/sounds/birds.mp3"
+  },
+  "Cow": {
+    "name": "Vaca",
+    "species": "Mamífero",
+    "sound": "assets/sounds/vaca.mp3"
+  },
+  "Dolphin": {
+    "name": "Delfín",
+    "species": "Mamífero",
+    "sound": "assets/sounds/delfin.mp3"
+  },
+  "Flamingo": {
+    "name": "Flamenco",
+    "species": "Ave",
+    "sound": "falta"
+  },
+  "Dog": {
+    "name": "Perro",
+    "species": "Mamífero",
+    "sound": "assets/sounds/perro.mp3"
+  },
+  "Cat": {
+    "name": "Gato",
+    "species": "Mamífero",
+    "sound": "assets/sounds/gato.mp3"
+  },
+  "Bull": {
+    "name": "Toro",
+    "species": "Mamífero",
+    "sound": "falta"
+  },
+  "Butterfly": {
+    "name": "Mariposa",
+    "species": "Insecto",
+    "sound": "falta"
+  },
+  "Penguin": {
+    "name": "Pingüino",
+    "species": "Ave",
+    "sound": "falta"
+  },
+  "Toucan": {
+    "name": "Tucán",
+    "species": "Ave",
+    "sound": "falta"
+  },
+  "Animals" : {
+    "singular":"Animal",
+    "plural":"Animales"
+  },
+  "Colors" : {
+    "singular":"Color",
+    "plural":"Colores"
+  },
+  "Numbers" : {
+    "singular":"Número",
+    "plural":"Números"
+  },
+  "Play": "",
+  "Learn": "¡Aprendé con Nima!",
+  "One" : {
+    "name": "Uno",
+    "sound": "assets/sounds/uno.mp3"
+  },
+  "Two" : {
+    "name": "Dos",
+    "sound": "assets/sounds/dos.mp3"
+  },
+  "Three" : {
+    "name": "Tres",
+    "sound": "assets/sounds/tres.mp3"
+  },
+  "Four" : {
+    "name": "Cuatro",
+    "sound": "assets/sounds/cuatro.mp3"
+  },
+  "Five" : {
+    "name": "Cinco",
+    "sound": "assets/sounds/cinco.mp3"
+  },
+  "Six" : {
+    "name": "Seis",
+    "sound": "falta"
+  },
+  "Seven" : {
+    "name": "Siete",
+    "sound": "falta"
+  },
+  "Eight" : {
+    "name": "Ocho",
+    "sound": "falta"
+  },
+  "Blue": {
+    "name": "Azul",
+    "type": "Primario",
+    "sound": "assets/sounds/azul.mp3"
+  },
+  "Red": {
+    "name": "Rojo",
+    "type": "Primario",
+    "sound": "assets/sounds/rojo.mp3"
+  },
+  "Yellow": {
+    "name": "Amarillo",
+    "type": "Primary",
+    "sound": "assets/sounds/amarillo.mp3"
+  },
+  "Purple": {
+    "name": "Violeta",
+    "type": "Secundario",
+    "sound": "assets/sounds/violeta.mp3"
+  },
+  "Green": {
+    "name": "Verde",
+    "type": "Secundario",
+    "sound": "assets/sounds/verde.mp3"
+  }
+}

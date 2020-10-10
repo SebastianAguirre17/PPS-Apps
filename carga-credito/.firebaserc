@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "utnfirstapp": {
+      "hosting": {
+        "app": [
+          "utnfirstapp"
+        ]
+      }
+    }
+  }
+}

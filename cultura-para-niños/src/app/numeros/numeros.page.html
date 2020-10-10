@@ -1,0 +1,29 @@
+<ion-content>
+
+  <ion-grid>    
+
+    <ion-row>
+      <ion-col size="12" *ngFor="let numero of numeros; let i = index">
+        <ion-card class="card numero" [attr.color-index]="i">
+          <ion-row class="info">
+            <ion-col size="12" class=behind> 
+              <!-- <ion-icon size="large" name="play-circle" (click)="playSound(numero)" *ngIf="!isPlaying || numero != activeItem"></ion-icon>
+              <ion-icon size="large" name="pause-circle" (click)="togglePlayer(true)" *ngIf="isPlaying && numero == activeItem"></ion-icon>            -->
+              <ion-icon class="image" src="{{numero.image | translate}}"></ion-icon>
+            </ion-col>
+            <ion-col size="12">
+              <!-- <ion-card-subtitle>{{numero.species | translate}}</ion-card-subtitle>
+              <ion-card-title class="name b-line">{{numero.name | translate}}</ion-card-title>  -->
+            <ion-icon size="large" name="play-circle" (click)="playSound(numero)" *ngIf="!isPlaying || numero != activeItem"></ion-icon>
+            <ion-icon size="large" name="pause-circle" (click)="togglePlayer(true)" *ngIf="isPlaying && numero == activeItem"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-card>        
+      </ion-col>
+    </ion-row>
+
+    <div class="empty"></div>
+
+  </ion-grid>
+
+</ion-content>

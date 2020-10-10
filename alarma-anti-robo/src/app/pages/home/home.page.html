@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <!-- <ion-title style=" text-align: center"> -->
+    <ion-title class="titleHome" slot="start">
+      Alarma de robo
+    </ion-title>
+    <ion-button class="btnLogout" color="medium" size="small" (click)="logout()">Salir</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="vertical-align-content">
+
+  <!-- <ion-toolbar class="toolbar"> -->
+  <ion-button *ngIf="activar" class="iButton" color="danger" (click)="activoAcelerometro()" expand="full">
+    <img src="../../assets/icon/padlockU.png" alt="">
+
+  </ion-button>
+  <!-- </ion-toolbar> -->
+
+  <!-- <ion-toolbar class="toolbar"> -->
+  <ion-button *ngIf="!activar" class="iButton" color="success" (click)="showAlert()" expand="full">
+    <img src="../../assets/icon/padlock.png" alt="">
+
+  </ion-button>
+
+  <!-- </ion-toolbar> -->
+  <div *ngIf="activateKeyWord">
+    
+        <ion-label class="labelClass" color="dark" position="stacked">Ingrese palabra clave:</ion-label>
+        <ion-input type="password" [(ngModel)]="keyWord" placeholder="Palabra clave"></ion-input>
+        <ion-button color="dark" expand="full" (click)=stopAcelerometer()>Enviar</ion-button>
+  </div>
+</ion-content>
+  <ion-footer>
+
+    <ion-title style="text-align: center;">Estado:</ion-title>
+
+    <ion-text> {{estado}}</ion-text>
+
+  </ion-footer>

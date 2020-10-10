@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">la-vecidad-cap</string>
+    <string name="title_activity_main">la-vecidad-cap</string>
+    <string name="package_name">com.braian.lavecindad</string>
+    <string name="custom_url_scheme">com.braian.lavecindad</string>
+</resources>

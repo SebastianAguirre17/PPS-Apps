@@ -1,0 +1,37 @@
+
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    max-height: 100%;
+}
+
+
+
+.fondo{
+    background-color: #80ACD0;
+    height: 100vh;
+}
+
+
+.texto{
+    align-self: center;
+    font-family: GameTime;
+    font-size: 3em;
+    text-align: center;
+    color: #ff7e67;
+    margin-bottom: .5em;
+    text-shadow: 2px 0 0 #fafafa, -2px 0 0 #fafafa, 0 2px 0 #fafafa, 0 -2px 0 #fafafa, 1px 1px #fafafa, -1px -1px 0 #fafafa, 1px -1px 0 #fafafa, -1px 1px 0 #fafafa;
+}
+
+.jugar{
+    //background-image: url('../../../assets/images/jugar.png');
+}

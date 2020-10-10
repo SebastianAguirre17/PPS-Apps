@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+ion-content{
+  --background: #AAAAAA;
+}
+
+.btnLogout{
+    display: inline-flex; float: right;
+    font-family: 'Oswald';
+    margin-right: 5%;
+}
+.titleHome{
+    margin-left: 28%;
+    text-align: center;
+}
+ion-title{
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+}
+.labelClass{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+ion-footer{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 200%;
+  height: 20%;
+  border:0.5em solid black;
+  background-color: #AAAAAA;
+}
+ion-item.ion-untouched.ion-pristine.ion-valid.item-interactive.item-input.item-has-placeholder.item.md.ion-focusable.item-label.item-label-stacked.hydrated {
+  --background: tomato;
+}
+.iButton{
+  text-decoration: none;
+  color: #FFF;
+  width: 99%;
+  height: 72%;
+  line-height: 160px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #59ad60;
+  display: block; 
+
+
+
+  border:0.5em solid black;
+  
+ 
+}
+

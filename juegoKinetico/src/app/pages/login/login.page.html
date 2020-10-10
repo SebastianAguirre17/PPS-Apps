@@ -1,0 +1,31 @@
+<ion-content class="background-image" >
+
+  <img src="../../../assets/images/user.png">
+
+        <ion-item>
+          <ion-label position="stacked">Usuario <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" [(ngModel)]="correo" ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Contraseña <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="password" [(ngModel)]="clave"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" color="medium" *ngIf="cargando"><ion-spinner name="crescent"></ion-spinner>
+          Cargando...</ion-button>
+
+        <ion-button expand="block" color="light" *ngIf="!cargando" (click)="logIn()" ><ion-icon name="key-outline"> </ion-icon>Aceptar</ion-button>
+        
+        <div style="display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;margin-top: 30px;">
+          <ion-button color="warning" (click)='autocompleta("IN")' >IN</ion-button>
+          <ion-button color="success" (click)='autocompleta("TS")' >TS</ion-button>
+          <ion-button color="tertiary" (click)='autocompleta("AN")'  >AN</ion-button>
+          <ion-button color="secondary" (click)='autocompleta("US")' >US</ion-button>
+          <ion-button color="primary" (click)='autocompleta("AD")' >AD</ion-button>
+        </div>
+       
+
+</ion-content>

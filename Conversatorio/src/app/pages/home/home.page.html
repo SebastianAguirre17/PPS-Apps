@@ -1,0 +1,60 @@
+<ion-header [translucent]="false" style="background-color: red;"> 
+
+  <ion-toolbar>
+    <ion-title >
+      <ion-grid>
+        <ion-row class="cabecera">
+          <p style="color: white;"> <strong> {{grupoActual}}</strong></p> 
+          <ion-back-button style="color: white;"></ion-back-button>
+        </ion-row>
+      </ion-grid>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [ngClass]="{PPS4ACont: this.grupoActual==='PPS-4A', PPS4BCont: this.grupoActual==='PPS-4B'}">
+  
+    <div [ngClass]="{PPS4ACont: this.grupoActual==='PPS-4A', PPS4BCont: this.grupoActual==='PPS-4B'}" id="listaMensajes">
+    <ion-list [ngClass]="{PPS4ACont: this.grupoActual==='PPS-4A', PPS4BCont: this.grupoActual==='PPS-4B'}" >
+      <ion-item [ngClass]="{PPS4ACont: this.grupoActual==='PPS-4A', PPS4BCont: this.grupoActual==='PPS-4B'}"   *ngFor="let item of mensajes">
+        <ion-button *ngIf="(!item.usuario == usuarioActual.id)&&(item.usuario == 'admin@admin.com')"  style="margin-right: 15px;" border-radius= "50px" class="imagen" color="primary">AD</ion-button>
+        <ion-button *ngIf="!(item.usuario == usuarioActual.id)&&(item.usuario == 'invitado@invitado.com')"  style="margin-right: 15px;" border-radius= "50px" class="imagen" color="warning">IN</ion-button>
+        <ion-button *ngIf="!(item.usuario == usuarioActual.id)&&(item.usuario == 'tester@tester.com')"  style="margin-right: 15px;" border-radius= "50px" class="imagen" color="success">TS</ion-button>
+        <ion-button *ngIf="!(item.usuario == usuarioActual.id)&&(item.usuario == 'usuario@usuario.com')"  style="margin-right: 15px;" border-radius= "50px" class="imagen" color="tertiary">US</ion-button>
+        <ion-button *ngIf="!(item.usuario == usuarioActual.id)&&(item.usuario == 'anonimo@anonimo.com')"  style="margin-right: 15px;" border-radius= "50px" class="imagen" color="danger">AN</ion-button>
+        <ion-label>
+        
+         <p *ngIf="(item.usuario == 'xlww2qI5aZPJNluEibeLgSStWzR2' && (item.usuario !== usuarioActual.id)) ">Admin</p> 
+         <p *ngIf="(item.usuario == 'wL15IjKdNNdDfOdveqoXiwHlGIz2') && (item.usuario !== usuarioActual.id) ">Invitado</p> 
+         <p *ngIf="(item.usuario == 'ij9HFNvTxpasJzde3HZlxvDOQlv1')  && (item.usuario !== usuarioActual.id)">Usuario</p> 
+         <p *ngIf="(item.usuario == 'cf0606GDPnTV8s0uzSwqdZvg3Ca2')  && (item.usuario !== usuarioActual.id)">Tester</p> 
+         <p *ngIf="(item.usuario == 'RTMO8XoS6rTjrMuBTucvFSQgniM2')  && (item.usuario !== usuarioActual.id)">Anónimo</p> 
+         <!-- <p [ngClass]="{'miMensajeDos': item.usuario === usuarioActual.id}" *ngIf="(item.usuario === usuarioActual.id)">Yo</p>  -->
+         <p class="mensaje" [ngClass]="{'miMensaje': item.usuario === usuarioActual.id}">{{item.mensaje}}</p>
+          <h5 class="hora">{{item.fecha}}</h5>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="enviar">
+        <ion-col  size="10" >
+          <ion-input  class="entrada" minlength="2" style="color: white;" (keydown.enter)="enviar()" maxlength="21" [(ngModel)]="mensajeNuevo" type="text" placeholder="Ingrese texto"></ion-input>
+        </ion-col>
+        <ion-col size="2">
+          <ion-button color="primary" (click)="enviar()"><ion-icon name="send"></ion-icon></ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-footer>
+
+<div class="spinnerInterceptor heartBeat" *ngIf="showSpinner">
+  <img src="../assets/icon/icon.png">
+  <p>Cargando...</p>
+</div>

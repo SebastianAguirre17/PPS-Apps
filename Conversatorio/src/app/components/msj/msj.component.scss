@@ -1,0 +1,27 @@
+
+
+
+
+.tarjeta{
+    width: 80%;
+    margin: 10px;
+    border: outset;
+    padding:5px
+}
+
+.header{
+    font-weight: bolder;
+}
+
+.hora{
+    margin: 0;
+    font: small-caption;
+    display: flex;
+    justify-content: flex-end;
+    font-size: x-small;
+}
+
+.mensaje{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

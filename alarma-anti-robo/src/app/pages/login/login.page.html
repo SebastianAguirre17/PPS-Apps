@@ -1,0 +1,46 @@
+<div id="custom-overlay" [style.display]=" splash ? 'block' : 'none' ">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+      <img src="../../../assets/icon/splash.png">	
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div> 
+</div> 
+
+
+
+<ion-header no-border>
+  <ion-toolbar color="dark" mode="md">
+    <ion-title style="text-align: center;">Ingresar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-item  slot="start">
+      <img src="../../assets/icon/AppIcono.png">
+    </ion-item>
+
+    <form [formGroup]="loginForm ">
+      <ion-item>
+        <ion-label color="dark" position="stacked">Email</ion-label>
+        <ion-input type="email" formControlName="email" placeholder="minombre@ejemplo.com"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark" position="stacked">Contraseña</ion-label>
+        <ion-input type="password" formControlName="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      
+      <div class="spin" *ngIf="spinner">
+        <ion-spinner name="crescent"></ion-spinner>
+      </div>
+      <ion-button color="dark" expand="block" (click)=login()>Ingresar</ion-button>
+    </form>
+  </ion-list>
+  <ion-button hidden color="dark" expand="block" [routerDirection]="'forward'" [routerLink]="['/signup']">Registrarse</ion-button>
+  
+</ion-content>
+<ion-footer no-shadow>
+	<ion-toolbar position="bottom">
+		<ion-button style="float: inline-end;"  color="dark" size="full" (click)="creoSheet()">Acceder como...</ion-button>
+	</ion-toolbar>
+</ion-footer>

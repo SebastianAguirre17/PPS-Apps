@@ -1,0 +1,20 @@
+ion-card {
+    --background: var(--ion-color-dark);
+    --color: white;
+    border-radius: 14px;
+}
+
+ion-thumbnail {
+    --border-radius: 8px;
+}
+
+.btnLogout{
+    --background: white;
+    background-color: white;
+    color: black;
+    display: inline-flex; float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+    border-radius: 40%;
+  }
+  

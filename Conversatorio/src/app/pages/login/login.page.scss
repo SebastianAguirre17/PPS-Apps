@@ -1,0 +1,35 @@
+.background-image{
+    --background: url(../../../assets/images/images.jpg) 0 0/100% 100% no-repeat;
+    
+}
+
+.imagen{
+    size: 300px;
+}
+.enter{
+    float: right;
+}
+ion-content{
+    --background: none;
+    background-color: #FFD7F7;
+}
+
+ion-button{
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+}
+
+ion-header{
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+}
+
+ion-toolbar{
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+}
+
+ion-footer{
+    --background: none;
+    background-color: darken($color: #1f1f1f, $amount: 0);
+}

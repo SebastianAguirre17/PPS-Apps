@@ -1,0 +1,73 @@
+<!--SPLASH-->
+<div id="custom-overlay" [ngClass]="{'fadeOut': fade}" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="icono">
+      <div class="icono roll-in-left"> <img class="" style="border-radius: 60%; width: 70%;" src="assets/images/splash.png"></div>
+      <div><h2 class="ion-text-center tracking-in-expand">Cultura Para Niños</h2></div> 
+    </div>    
+    <div class="nombre ion-text-center fade-in-bottom">
+      <h2 class="">Braian Cardozo</h2>
+        <h3>4B</h3>
+      </div>
+    </div>
+  </div>
+  <!--SPLASH-->
+  
+  
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="end" class="ion-margin-end">
+        <ion-button class="b-bottom">
+          Ingresar
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    
+    <div class="bienvenida">
+      
+      <ion-icon class="cat" src="assets/images/tucan.svg"></ion-icon> 
+      <h1 class="big">¡Bienvenido!</h1>
+      <h1>¿Estás listo para<br>
+      aprender y disfrutar?</h1>
+    </div>
+    
+    <form class="form" [formGroup]="validations_form">
+      
+      <ion-item class="ion-margin-bottom">
+        <ion-label  position="floating">Email</ion-label>
+        <ion-input type="text" formControlName="email"></ion-input>
+      </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.email">
+          <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
+      
+      <ion-item>
+        <ion-label  position="floating">Contraseña</ion-label>
+        <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+      </ion-item>
+      <div class="validation-errors">
+        <ng-container *ngFor="let validation of validation_messages.password">
+          <div class="error-message" *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+            {{ validation.message }}
+          </div>
+        </ng-container>
+      </div>
+      
+      <div class="error-message-2">{{errorMessage}}</div>
+    </form> 
+    
+  </ion-content>
+  
+  <ion-footer class="ion-no-border">
+    <ion-button class="enter" (click)="loginUser(validations_form.value)" [disabled]="!validations_form.valid"><ion-icon name="log-in-outline"></ion-icon></ion-button> 
+    <ion-toolbar>
+      <ion-button class="ingresos" expand="full" (click)="presentActionSheet()" >Ingresar como</ion-button>
+    </ion-toolbar>
+  </ion-footer>

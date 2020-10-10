@@ -1,0 +1,60 @@
+
+<ion-header color="dark" class="ion-no-border">
+  <div class="bottom-content">
+    <ion-button expand="full" (click)="presentActionSheet()" ><ion-icon name="code-outline"></ion-icon></ion-button>
+  </div>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <div color="dark" class="bienvenida">
+    
+    <img src="../../../assets/images/compu.svg" /> 
+    <br/>
+    <br/>
+  </div>
+  
+  <form class="form" [formGroup]="validations_form"  (ngSubmit)="loginUser(validations_form.value)">
+    
+    <ion-item class="ion-margin-bottom">
+      <ion-label  position="floating">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.email">
+        <div class="error-message" *ngIf="validations_form.get('email').hasError(validation.type) && (validations_form.get('email').dirty || validations_form.get('email').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    
+    <ion-item>
+      <ion-label  position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" class="form-controll" required></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validation_messages.password">
+        <div class="error-message" *ngIf="validations_form.get('password').hasError(validation.type) && (validations_form.get('password').dirty || validations_form.get('password').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    
+    <ion-button class="enter" type="submit" [disabled]="!validations_form.valid">Iniciar Sesión <ion-icon name="chevron-forward-circle-outline"></ion-icon></ion-button>
+    
+    <div class="error-message-2">{{errorMessage}}</div>
+    
+  
+  </form>
+  
+</ion-content>
+<ion-footer color="dark">
+  <ion-toolbar>
+    <ion-buttons style="    margin-right: 20%;" slot="end" class="ion-margin-start">
+      <ion-button class="b-bottom">
+        <ion-icon name="desktop-outline"></ion-icon>  UTN CHAT <ion-icon name="return-up-forward-outline"></ion-icon>SIEMPRE <ion-icon name="return-up-back-outline"></ion-icon> INNOVANDO  <ion-icon name="desktop-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

@@ -1,0 +1,8 @@
+{
+  "name": "picBild",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

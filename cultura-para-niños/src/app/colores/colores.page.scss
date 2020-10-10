@@ -1,0 +1,79 @@
+
+.card{
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: -1px 16px 56px -31px rgba(0,0,0,0.73);
+  -moz-box-shadow: -1px 16px 56px -31px rgba(0,0,0,0.73);
+  box-shadow: -1px 16px 56px -31px rgba(0,0,0,0.73);
+  }
+  
+  .b-line:before{
+    content: "";
+    display: block;
+    width: 15%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: -25%;
+    top: 40%;
+  }
+  
+  .color ion-item{
+    position: absolute;
+    bottom: -10px;
+    margin-left: -15px;
+  }
+
+  .color ion-icon {
+    color:#454545;
+    margin-right: 5px;
+  }
+  .color .name{
+    margin-top: 5px;
+    font-size: 25px;
+  }
+  .color .info{
+    height: 120px;
+  }
+  
+  .color .image{
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+      font-size: 8rem;
+  }
+
+  .empty{
+      height: 5rem;
+  }
+
+  .color ion-card-subtitle{
+    font-weight: 600;
+    color: white;
+  }
+
+  ion-card[color-index="Blue.name"],ion-card[color-index="Blue.name"] ion-item {
+    background-color: #1d60f0;
+    --background: #1d60f0;
+  }
+
+  ion-card[color-index="Green.name"],ion-card[color-index="Green.name"] ion-item {
+    background-color: #0ccf00;
+    --background: #0ccf00;
+  }
+
+  ion-card[color-index="Red.name"], ion-card[color-index="Red.name"] ion-item{
+    --background: #ff8080; 
+    background-color: #ff8080;
+  }
+
+  ion-card[color-index="Yellow.name"], ion-card[color-index="Yellow.name"] ion-item{
+    --background: #ffe13c;
+    background-color: #ffe13c;
+  }
+
+  ion-card[color-index="Purple.name"], ion-card[color-index="Purple.name"] ion-item{
+    --background: #e980d1;
+    background-color: #e980d1;
+  }

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap');
+ion-header{
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+}
+ion-toolbar{
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+}
+
+ion-button {
+    --background: none;
+    background-color: darken($color: #FF99EB, $amount: 0);
+    display: inline-flex;
+    float: right;
+    margin-right: 2%;
+}
+ion-title {
+    margin-top: 3%;
+    display: inline-flex;
+    float: left;
+    color: white;
+}
+.texto{
+    color: #FFF;
+    margin-top: 25%;
+    text-align: center;
+    font-weight: 700;
+    font-size: xxx-large;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.verde{
+    background-color: #B5FFF4;
+}   
+
+.rojo{
+    background-color: #FFF3B5;
+}
+
+
+.boton{
+    width: 100%;
+    height: 50%;
+    margin: inherit;
+}
+
+@media screen and (orientation:landscape) { 
+
+    .texto{
+        color: #FFF;
+        margin-top: 5%;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Balsamiq Sans', cursive;
+    }
+   
+}
+

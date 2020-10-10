@@ -1,0 +1,26 @@
+body{
+    // background-color: var(--ion-color-dark);
+    background-color: white;
+
+}
+
+
+ion-content{
+    --background: none;
+    --background: none;
+    background-image: linear-gradient(to bottom, #FFED9A, #FAD83C);
+    --ion-background-color:rgba(255, 255, 255, 0); //transparente
+    --ion-text-color: black;
+  }
+
+  ion-content.background{
+    // --background: url(../../assets/img/bg.jpg) 0 0/100% 100% no-repeat;
+    --background: none;
+      background-image: linear-gradient(to bottom, #FFED9A, #FAD83C);
+    // width: 100%;
+    // height: 100%;
+    // background-image: url(../../assets/img/bg.jpg);
+    background-position: 0px 0px;
+    // background-repeat: repeat-x;
+    // animation: animatedBackground 190s linear infinite alternate;
+  }

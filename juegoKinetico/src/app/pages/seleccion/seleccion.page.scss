@@ -1,0 +1,42 @@
+ion-button{
+    color: white;
+    font-weight: bolder;
+    font-size: 100%;
+    height: 100%; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+  }
+  
+  .botonLindo{
+    background-image: url('../../../assets/images/dc.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .botonFeo{
+    background-image: url('../../../assets/images/marvel.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  ion-grid{
+    height: 100%;
+    margin: 0 !important; 
+    padding: 0;
+  }
+  
+  ion-row{
+    height: 50%;
+    margin: 0;    
+    padding: 0;
+  }
+  
+  ion-col{
+    margin: 0;    
+    padding: 0;
+    width: 100%;
+  }

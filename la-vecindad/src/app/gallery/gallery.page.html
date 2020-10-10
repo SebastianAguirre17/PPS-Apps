@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="medium">
+      <ion-title >La vecindad</ion-title>
+      <!-- <ion-avatar slot="end" style="height:40px; width: 40px; margin-right: 8px;" *ngIf="user">
+        <img [src]="user ? user.imageUrl : 'Loading...'" (click)="presentAlertLogout()"> 
+      </ion-avatar>  -->
+      <ion-button class="btnLogout" expand="small" (click)="presentAlertLogout()">Salir</ion-button>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding fullscreen>
+  <ion-grid  style="height: 100%">
+        <ion-row size="12">
+          <ion-col text-center size-sm="6" offset-sm="3">
+              <div class="container prettyAndUgly pretty" (click)="navCtrl.navigateForward(['/list', 'pretty'])">
+                <img src="/assets/img/lindo.jpg" alt="Cinque Terre">
+                <div class="center">COSAS LINDAS</div>
+                <div class="center2" style="top: 74%!important;color: black;">DEL EDIFICIO</div>
+              </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="abajo" size="12">
+          <ion-col text-center size-sm="10" offset-sm="6">
+              <div class="container prettyAndUgly ugly" (click)="navCtrl.navigateForward(['/list', 'ugly'])">
+                <img style="filter:brightness(60%);" src="/assets/img/feo.jpg" alt="Cinque Terre">
+                <div class="center" style="color: white;" >COSAS FEAS</div>
+                <div class="center2" style="top: 76%!important;color: white;">DEL EDIFICIO</div>              
+              </div>
+          </ion-col>
+        </ion-row>
+  </ion-grid>  
+  
+</ion-content>
+

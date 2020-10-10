@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-742f5": {
+      "hosting": {
+        "app": [
+          "login-742f5"
+        ]
+      }
+    }
+  }
+}
